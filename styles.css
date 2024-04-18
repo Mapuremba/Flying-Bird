@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('Background.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #87CEEB;
+}
+
+#game-container {
+    width: 300px; /* Adjust width */
+    height: 500px; /* Adjust height */
+    border: 2px solid black;
+    background-color: rgba(255, 215, 0, 1); /* Fully opaque gold color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#game-container .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 215, 0, 1); /* Fully opaque gold color */
+    z-index: -1;
+}
